@@ -4,6 +4,7 @@ package com.projet.SiteEnLigne.controller;
 import com.projet.SiteEnLigne.modele.Utilisateur;
 import com.projet.SiteEnLigne.service.UtilisateurService;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
