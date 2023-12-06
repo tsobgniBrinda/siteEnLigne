@@ -21,7 +21,12 @@ public class UtilisateurController {
     }
     @GetMapping("")
     public List<Utilisateur> users(){
-        return utilisateurService.lire();
+        return utilisateurService.lireAllUsers();
+    }
+
+    @GetMapping("/{id}")
+    public Utilisateur user(@PathVariable Long id){
+        return utilisateurService.lireUser(id);
     }
 
     @PutMapping("/update/{id}")
